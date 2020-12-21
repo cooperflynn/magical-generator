@@ -50,7 +50,7 @@ for(i=0; i < Number(lengthPrompt); i++) {
 }
 
 
-  var password = generatePassword();
+  // var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = generate;
