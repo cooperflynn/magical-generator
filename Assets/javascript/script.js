@@ -35,11 +35,12 @@ if (upperCaseConfirm) {
 }
 
 
+var generate = '';
 
-
-
-
-
+for(i=0; i < Number(lengthPrompt); i++) {
+  var rand = Math.floor(Math.random() * characters.length) -1;
+  generate += characters[rand];
+}
 
 
 
@@ -51,7 +52,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = generate;
 
 }
 
