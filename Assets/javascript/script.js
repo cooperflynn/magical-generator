@@ -7,13 +7,10 @@ var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "
 var characters = [];
 console.log(characters);
 
-var lengthPrompt = window.prompt("How many characters long do you want your password to be?");
+var lengthPrompt = window.prompt("How many characters do you want your password to be (please select a number between 8 and 128)?");
 
-if (lengthPrompt < 8 || lengthPrompt > 128) {
-  window.alert("Please choose a password length between 8 and 128 characters.");
-} 
-else {
-
+while(lengthPrompt < 8 || lengthPrompt > 128) {
+  lengthPrompt = window.prompt("How many characters do you want your password to be (please select a number between 8 and 128)?");
 }
 
 var specialCharConfirm = window.confirm("Do you want to include special characters in your password?");
